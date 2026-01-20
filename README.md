@@ -1,1 +1,114 @@
-# p9_
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portada calendario</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+
+@page{
+    margin:0;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    font-size:5px;
+}
+
+h1, p{
+    font-family: "Lexend Zetta", sans-serif;
+    color:white;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    background:#c93636;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5%;
+    box-sizing:border-box;
+}
+
+/* año */
+.any{
+    font-size:80em;
+    font-weight:300;
+}
+
+/* columna derecha */
+.columna{
+    text-align:right;
+}
+
+/* calendario */
+.titol{
+    font-size:30em;   /* más grande que antes */
+    font-weight:800;  /* bold */
+    margin-bottom: 10px; /* menos espacio debajo para subirlo visualmente */
+}
+
+/* caja de meses */
+.meses-box {
+    background: rgba(0, 0, 0, 0.2); /* fondo semi-transparente */
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5); /* sombra difusa */
+}
+
+/* meses individuales */
+.columna p{
+    font-size:5em;
+    margin:0.3em 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- izquierda -->
+    <h1 class="any">2026</h1>
+
+    <!-- derecha -->
+    <div class="columna">
+        <p class="titol">CALENDARIO</p>
+
+        <!-- contenedor de meses con sombra -->
+        <div class="meses-box">
+            <p>ENERO</p>
+            <p>FEBRERO</p>
+            <p>MARZO</p>
+            <p>ABRIL</p>
+            <p>MAYO</p>
+            <p>JUNIO</p>
+            <p>JULIO</p>
+            <p>AGOSTO</p>
+            <p>SEPTIEMBRE</p>
+            <p>OCTUBRE</p>
+            <p>NOVIEMBRE</p>
+            <p>DICIEMBRE</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
